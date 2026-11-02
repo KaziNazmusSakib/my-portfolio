@@ -1,7 +1,8 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
-import { Newsreader, IBM_Plex_Sans } from "next/font/google";
+import { IBM_Plex_Sans, Newsreader } from "next/font/google";
 import "./globals.css";
+//import ThemeProvider from "@/components/ThemeProvider";
 import { profile } from "@/content/profile";
 
 const display = Newsreader({
@@ -21,10 +22,12 @@ export const metadata: Metadata = {
   description: profile.summary.slice(0, 160),
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
-      <body>{children}</body>
-    </html>
-  );
-}
+// export default function RootLayout({ children }: { children: React.ReactNode }) {
+//   return (
+//     <html lang="en" className={`${display.variable} ${body.variable}`} suppressHydrationWarning>
+//       <body>
+//         <ThemeProvider>{children}</ThemeProvider>
+//       </body>
+//     </html>
+//   );
+// }
