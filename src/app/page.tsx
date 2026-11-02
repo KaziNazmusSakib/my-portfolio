@@ -19,9 +19,9 @@ export default function Home() {
         <Hero />
         <Research />
 
-        <section id="projects" className="mx-auto max-w-4xl px-6 py-24">
+        <section id="projects" className="mx-auto max-w-6xl px-6 py-24">
           <SectionHeading title="Projects" />
-          <div className="mt-10">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {profile.projects.map((project) => (
               <ProjectCard
                 key={project.title}

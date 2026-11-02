@@ -35,6 +35,32 @@
   --font-body: var(--f-body), system-ui, sans-serif;
 }
 
+@layer components {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem;
+    border: 1px solid var(--rule);
+    border-radius: 0.75rem;
+    background: color-mix(in srgb, var(--ink) 3%, var(--paper));
+    transition: border-color 0.25s ease, transform 0.25s ease;
+  }
+
+  .project-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .tech-chip {
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 0.2rem 0.65rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+}
+
 body {
   background: var(--paper);
   color: var(--ink);
