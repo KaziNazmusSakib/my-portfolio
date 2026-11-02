@@ -7,6 +7,8 @@ const statusDot: Record<Status, string> = {
   "In progress": "bg-ochre",
 };
 
+
+
 type ProjectCardProps = {
   title: string;
   summary: string;
