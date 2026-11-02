@@ -1,16 +1,20 @@
 // src/app/page.tsx
+import Awards from "@/components/Awards";
+import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
-// import Header from "@/components/Header";
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ProjectCard from "@/components/ProjectCard";
+import Publications from "@/components/Publications";
 import Research from "@/components/Research";
 import SectionHeading from "@/components/SectionHeading";
+import Skills from "@/components/Skills";
 import { profile } from "@/content/profile";
 
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <main id="top">
         <Hero />
         <Research />
@@ -32,6 +36,10 @@ export default function Home() {
         </section>
 
         <Experience />
+        <Publications />
+        <Awards />
+        <Skills />
+        <Contact />
       </main>
     </>
   );
