@@ -1,6 +1,6 @@
 // src/app/page.tsx
 import Experience from "@/components/Experience";
-// import Header from "@/components/Header";
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ProjectCard from "@/components/ProjectCard";
 import Research from "@/components/Research";
@@ -10,7 +10,7 @@ import { profile } from "@/content/profile";
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <main id="top">
         <Hero />
         <Research />
