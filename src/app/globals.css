@@ -1,23 +1,46 @@
 /* src/app/globals.css */
 @import "tailwindcss";
 
-@theme inline {
-  --color-paper: #faf8f3;
-  --color-ink: #1c2631;
-  --color-muted: #66717c;
-  --color-rule: #e2ded3;
-  --color-accent: #1d6b66;
-  --color-ochre: #b07d2b;
-  --color-sage: #4a7c59;
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --paper: #f1f5f6;
+  --ink: #1c2631;
+  --muted: #5f6d78;
+  --rule: #d5dee2;
+  --accent: #1d6b66;
+  --ochre: #b07d2b;
+  --sage: #4a7c59;
+}
+
+.dark {
+  --paper: #0f1720;
+  --ink: #e6ecef;
+  --muted: #94a3ad;
+  --rule: #263340;
+  --accent: #6fcac2;
+  --ochre: #e0ad55;
+  --sage: #86bb93;
+}
+
+@theme {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-ochre: var(--ochre);
+  --color-sage: var(--sage);
   --font-display: var(--f-display), Georgia, serif;
   --font-body: var(--f-body), system-ui, sans-serif;
 }
 
 body {
-  background: var(--color-paper);
-  color: var(--color-ink);
+  background: var(--paper);
+  color: var(--ink);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
