@@ -54,11 +54,25 @@ export const profile = {
       status: "Code only" as const,
     },
     {
+      title: "Vocatone",
+      summary: "Java application developed as a university project.", // TODO: add description
+      tech: ["Java"],
+      github: "https://github.com/KaziNazmusSakib/Vocatone",
+      status: "Code only" as const,
+    },
+    {
       title: "Dengue Risk Analysis (BSc Thesis)",
       summary: "Satellite-based dengue risk analysis in Dhaka.",  
       tech: ["Geospatial data", "Machine learning"],  
       github: "", // TODO: add link if public
       status: "In progress" as const,
+    },
+    {
+      title: "True Cure",
+      summary: "Healthcare platform for pathology services with authentication and a responsive UI.",
+      tech: ["C#", "MVC"],
+      github: "", // TODO: add link
+      status: "Code only" as const,
     },
     {
       title: "Image Captioning",
