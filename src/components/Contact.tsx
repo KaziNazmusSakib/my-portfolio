@@ -36,7 +36,7 @@ export default function Contact() {
       </div>
 
       <p className="mt-16 text-sm text-muted">
-        {new Date().getFullYear()} {profile.name}
+        &copy; {new Date().getFullYear()} {profile.name}
       </p>
     </section>
   );
