@@ -2,11 +2,13 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-paper: #f7f6f2;
-  --color-ink: #16202a;
-  --color-muted: #5b6670;
-  --color-rule: #d9d6cc;
-  --color-accent: #0f5f5c;
+  --color-paper: #faf8f3;
+  --color-ink: #1c2631;
+  --color-muted: #66717c;
+  --color-rule: #e2ded3;
+  --color-accent: #1d6b66;
+  --color-ochre: #b07d2b;
+  --color-sage: #4a7c59;
   --font-display: var(--f-display), Georgia, serif;
   --font-body: var(--f-body), system-ui, sans-serif;
 }
