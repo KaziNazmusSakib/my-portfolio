@@ -90,13 +90,14 @@ export const profile = {
       status: "Thesis", // TODO: "Published" | "Accepted" | "Under review"
       link: "", // TODO
     },
-    // {
-    //   title: "Attention-based English image captioning", // TODO: final title
-    //   venue: "Co-authored paper", // TODO
-    //   year: 2026,
-    //   status: "Not Published Yet", // TODO
-    //   link: "", // TODO
-    // },
+    {
+      title: "Attention-based English image captioning", // TODO: final title
+      venue: "Co-authored paper", // TODO
+      year: 2026,
+      status: "Not Published Yet", // TODO
+      link: "", // TODO
+    },
+
   ],
   awards: [
     "Dean's Certificate of Excellence (4 times, 2022–2025)",
